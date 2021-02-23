@@ -20,7 +20,7 @@ Two additional notebooks demonstrate inefficient methods to achieve the same
 goal, based on the rotation of magnetic moments. The first,
 [Macrospin_Approximation](notebooks/Macrospin_Approximation.ipynb), assumes a
 single macrospin, with all moments aligned, and minimises the energy by
-rotating a single ($\theta$, $\phi$) tuple. The second,
+rotating a single (<!-- $\theta$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctheta">, <!-- $\phi$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cphi">) tuple. The second,
 [Global_Optimisation](notebooks/Global_Optimisation.ipynb), performs a global
 optimisation by freely rotating the all moments.
 
@@ -54,31 +54,32 @@ where _d_ is the inter-layer spacing, and the critical monomer number  is ![Nc](
 
 ![Lc](https://render.githubusercontent.com/render/math?math=L_c%20%3D%20%202d%5Cleft(%5Cfrac%7B%20%7Bk_B%7D%20T%7D%7B%5Cmu_B%20m_%7Batom%7D%20B%7D%20%20%5Cright)%5E2)
 
-To generate the table below, we take _d_ = 0.35 nm, _B_ = 2 T, and _T_ = 298 K. The table units are: m: µ<sub>B</sub>, _m_<sub>_eff_</sub>: %, _U_<sub>_m_</sub>: J mol$^{-1}$, _L_<sub>_c_</sub>: nm, _N_<sub>_c_</sub>: none.
+To generate the table below, we take _d_ = 0.35 nm, _B_ = 2 T, and _T_ = 298 K. 
 
-| Ion                              |  _m_ | _m_<sub>_eff_</sub> | _U_<sub>_m_</sub> |  _dG_ | _L_<sub>_c_</sub> | _N_<sub>_c_</sub> |
-| :------------------------------- | ---: | ------------------: | ----------------: | ----: | ----------------: | ----------------: |
-| Ti<sup>3+</sup>, V<sup>4+</sup>  |  1.7 |                0.26 |             -0.07 | -0.04 |             11918 |             34052 |
-| Ti<sup>2+</sup>, V<sup>3+</sup>  |  2.8 |                0.42 |              -0.2 |  -0.1 |              4393 |             12553 |
-| V<sup>2+</sup>, Cr<sup>3+</sup>  |  3.8 |                0.57 |             -0.36 | -0.18 |              2385 |              6816 |
-| Cr<sup>2+</sup>, Mn<sup>3+</sup> |  4.9 |                0.74 |              -0.6 |  -0.3 |              1435 |              4099 |
-| Mn<sup>2+</sup>, Fe<sup>3+</sup> |  5.9 |                0.89 |             -0.88 | -0.44 |               989 |              2828 |
-| Fe<sup>2+</sup>, Co<sup>3+</sup> |  5.4 |                0.81 |             -0.73 | -0.37 |              1181 |              3375 |
-| Co<sup>2+</sup>, Ni<sup>3+</sup> |  4.8 |                0.72 |             -0.58 | -0.29 |              1495 |              4272 |
-| Ni<sup>2+</sup>                  |  3.2 |                0.48 |             -0.26 | -0.13 |              3364 |              9611 |
-| Cu<sup>2+</sup>                  |  1.9 |                0.29 |             -0.09 | -0.05 |              9541 |             27261 |
-| Ce<sup>3+</sup>                  |  2.5 |                0.38 |             -0.16 | -0.08 |              5511 |             15746 |
-| Pr<sup>3+</sup>                  |  3.5 |                0.53 |             -0.31 | -0.15 |              2812 |              8034 |
-| Nd<sup>3+</sup>                  |  3.4 |                0.51 |             -0.29 | -0.15 |              2980 |              8513 |
-| Sm<sup>3+</sup>                  |  1.7 |                0.26 |             -0.07 | -0.04 |             11918 |             34052 |
-| Eu<sup>3+</sup>                  |  3.4 |                0.51 |             -0.29 | -0.15 |              2980 |              8513 |
-| Gd<sup>3+</sup>                  |  8.9 |                1.34 |             -1.99 |    -1 |               435 |              1243 |
-| Tb<sup>3+</sup>                  |  9.8 |                1.47 |             -2.42 | -1.21 |               359 |              1025 |
-| Dy<sup>3+</sup>                  | 10.6 |                1.59 |             -2.83 | -1.41 |               307 |               876 |
-| Ho<sup>3+</sup>                  | 10.4 |                1.56 |             -2.72 | -1.36 |               318 |               910 |
-| Er<sup>3+</sup>                  |  9.5 |                1.43 |             -2.27 | -1.14 |               382 |              1091 |
-| Tm<sup>3+</sup>                  |  7.6 |                1.14 |             -1.45 | -0.73 |               596 |              1704 |
-| Yb<sup>3+</sup>                  |  4.5 |                0.68 |             -0.51 | -0.25 |              1701 |              4860 |
+| Ion                              |           _m_ | _m_<sub>_eff_</sub> |  _U_<sub>_m_</sub> |               _dG_ | _L_<sub>_c_</sub> | _N_<sub>_c_</sub> |
+| :------------------------------- | ------------: | ------------------: | -----------------: | -----------------: | ----------------: | ----------------: |
+|                                  | µ<sub>B</sub> |                   % | J mol<sup>-1</sup> | J mol<sup>-1</sup> |                nm |                   |
+| Ti<sup>3+</sup>, V<sup>4+</sup>  |           1.7 |                0.26 |              -0.07 |              -0.04 |             11918 |             34052 |
+| Ti<sup>2+</sup>, V<sup>3+</sup>  |           2.8 |                0.42 |               -0.2 |               -0.1 |              4393 |             12553 |
+| V<sup>2+</sup>, Cr<sup>3+</sup>  |           3.8 |                0.57 |              -0.36 |              -0.18 |              2385 |              6816 |
+| Cr<sup>2+</sup>, Mn<sup>3+</sup> |           4.9 |                0.74 |               -0.6 |               -0.3 |              1435 |              4099 |
+| Mn<sup>2+</sup>, Fe<sup>3+</sup> |           5.9 |                0.89 |              -0.88 |              -0.44 |               989 |              2828 |
+| Fe<sup>2+</sup>, Co<sup>3+</sup> |           5.4 |                0.81 |              -0.73 |              -0.37 |              1181 |              3375 |
+| Co<sup>2+</sup>, Ni<sup>3+</sup> |           4.8 |                0.72 |              -0.58 |              -0.29 |              1495 |              4272 |
+| Ni<sup>2+</sup>                  |           3.2 |                0.48 |              -0.26 |              -0.13 |              3364 |              9611 |
+| Cu<sup>2+</sup>                  |           1.9 |                0.29 |              -0.09 |              -0.05 |              9541 |             27261 |
+| Ce<sup>3+</sup>                  |           2.5 |                0.38 |              -0.16 |              -0.08 |              5511 |             15746 |
+| Pr<sup>3+</sup>                  |           3.5 |                0.53 |              -0.31 |              -0.15 |              2812 |              8034 |
+| Nd<sup>3+</sup>                  |           3.4 |                0.51 |              -0.29 |              -0.15 |              2980 |              8513 |
+| Sm<sup>3+</sup>                  |           1.7 |                0.26 |              -0.07 |              -0.04 |             11918 |             34052 |
+| Eu<sup>3+</sup>                  |           3.4 |                0.51 |              -0.29 |              -0.15 |              2980 |              8513 |
+| Gd<sup>3+</sup>                  |           8.9 |                1.34 |              -1.99 |                 -1 |               435 |              1243 |
+| Tb<sup>3+</sup>                  |           9.8 |                1.47 |              -2.42 |              -1.21 |               359 |              1025 |
+| Dy<sup>3+</sup>                  |          10.6 |                1.59 |              -2.83 |              -1.41 |               307 |               876 |
+| Ho<sup>3+</sup>                  |          10.4 |                1.56 |              -2.72 |              -1.36 |               318 |               910 |
+| Er<sup>3+</sup>                  |           9.5 |                1.43 |              -2.27 |              -1.14 |               382 |              1091 |
+| Tm<sup>3+</sup>                  |           7.6 |                1.14 |              -1.45 |              -0.73 |               596 |              1704 |
+| Yb<sup>3+</sup>                  |           4.5 |                0.68 |              -0.51 |              -0.25 |              1701 |              4860 |
 
 ## 3. Magnetic Dipole Calculations
 
@@ -86,7 +87,7 @@ To generate the table below, we take _d_ = 0.35 nm, _B_ = 2 T, and _T_ = 298 K. 
 
 To ensure that, at room temperature, the local dipolar fields play no role in
 the arrangement of the magnetic moments, we calculate the magnetic ground state
-for a magnetic assembly of length N_m in an external magnetic field using a
+for a magnetic assembly of length <!-- $N_m$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=N_m"> in an external magnetic field using a
 lattice sum approach:
 
 1. Impose an external field
