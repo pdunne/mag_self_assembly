@@ -42,7 +42,7 @@ At room temperature, local dipolar fields, and exchange interactions from neighb
 
 ![curie_law](https://render.githubusercontent.com/render/math?math=m_%7Beff%7D%20%3D%20%20%20%5Cfrac%7B%7B%5Cmu_B%7D%5E2%20m_%5Cmathrm%7Batom%7D%5E2%20B%7D%7B3%20%7Bk_B%7D%20T%7D)
 
-where $m_\mathrm{atom}$ is the 0 K atomic moment also in units of ![muB](https://render.githubusercontent.com/render/math?math=%5Cmu_B). In this scheme, **m** is always collinear with **B**, and the magnetic energy of a monomer, with three rare earth atoms is thus
+where <!-- $m_{atom}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=m_%7Batom%7D"> is the 0 K atomic moment also in units of ![muB](https://render.githubusercontent.com/render/math?math=%5Cmu_B). In this scheme, **m** is always collinear with **B**, and the magnetic energy of a monomer, with three rare earth atoms is thus
 
 ![Umono](https://render.githubusercontent.com/render/math?math=U_%7Bmono%7D%20%3D%20%20%20-%20%5Cfrac%7B%7B%5Cmu_B%7D%5E2%20m_%7Batom%7D%5E2%20B%5E2%7D%7B%202%7Bk_B%7D%20T%7D)
 
@@ -101,9 +101,11 @@ a helicity of 10˚ rotation per layer, which for the i<sup>th</sup> atom of the
 j<sup>th</sup> layer is:
 
 ![position](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20x'%20%5C%5C%0A%20%20%20%20y'%20%5C%5C%0A%20%20%20%20z'%0A%5Cend%7Bbmatrix%7D_%7Bi%2Cj%7D%0A%3D%0A%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20%5Ccos%20j%5Ctheta%20%20%26%20-%5Csin%20j%5Ctheta%20%26%201%20%20%5C%5C%0A%20%20%20%20%5Csin%20j%5Ctheta%20%20%26%20%5Ccos%20j%5Ctheta%20%26%201%20%20%5C%5C%0A%20%20%20%200%20%20%20%20%20%20%20%20%20%20%20%20%20%26%200%20%26%201%20%26%0A%5Cend%7Bbmatrix%7D%0A%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20x%20%20%5C%5C%0A%20%20%20%20y%20%5C%5C%0A%20%20%20%20z%20%2B%20j%20d%0A%5Cend%7Bbmatrix%7D_%7Bi%2Cj%7D)
+
 3. Calculate each local dipole moment using either a Curie-Law or Brillouin
 function (at _T_ = 298 K the difference is negligible) giving and array of
 ![m](https://render.githubusercontent.com/render/math?math=%5Cmathbf%7Bm%7D%20%3D%20m_x%20%5Cmathbf%7B%5Chat%7Bx%7D%7D%20%2B%20m_y%20%5Cmathbf%7B%5Chat%7By%7D%7D%20%2B%20m_z%20%5Cmathbf%7B%5Chat%7Bz%7D%7D).
+
 4. At each atomic site, calculate the dipolar field due to all other moments in
 the assembly using
 
@@ -113,10 +115,14 @@ which is the magnetic field at a point in space due to a magnetic dipole,
 resulting in a matrix
 
 ![field](https://render.githubusercontent.com/render/math?math=%5Cmathbf%7BB_%7Bdip%7D%7D%20%3D%20B_%7Bdip%2C%20x%7D%20%5Cmathbf%7B%5Chat%7Bx%7D%7D%20%2B%20B_%7Bdip%2C%20y%7D%20%5Cmathbf%7B%5Chat%7By%7D%7D%20%2B%20B_%7Bdip%2C%20y%7D%20%5Cmathbf%7B%5Chat%7Bz%7D%7D)
+
 5. At each atomic site sum the external and dipole fields ![total_field](https://render.githubusercontent.com/render/math?math=B_%7Btotal%7D%20%3D%20%20B_%7Bext%7D%20%2B%20B_%7Bdip%7D)
+
 6. Calculate a new moment m_new at each site using the local ![Btot](https://render.githubusercontent.com/render/math?math=B_%7Btotal%7D)
+
 7. Calculate the mean L2 norm for the difference between the updated and old moment vectors at each site
 ![L2](https://render.githubusercontent.com/render/math?math=%5ClVert%20m%20%5CrVert_2%20%3D%20%5Cfrac%7B1%7D%7BN_%7Batoms%7D%7D%20%5Csum%20(m_%7Bnew%7D%20-%20m_%7Bold%7D)%5E2%20%5Crightarrow%200)
+
 8. Repeat 3 – 7 with updated total field and moments until ![thresh](https://render.githubusercontent.com/render/math?math=%5ClVert%20m%20%5CrVert_2%20%5Cleq) threshold
 
 Other minimisation approaches are possible, such as by fixing the magnitude of
