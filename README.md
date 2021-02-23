@@ -26,7 +26,7 @@ optimisation by freely rotating the all moments.
 
 ## 1. DOTA-BTA Structure
 
-The DOTA-BTA monomers stack in a chiral structure, with
+The DOTA-BTA monomers stack in a chiral structure, shown below (see [Self-Consistent Method](#self-consistent-method))
 
 <img src="img/chiral_struct.png" alt="chiral_struct" width="400"/>
 
@@ -54,7 +54,7 @@ where _d_ is the inter-layer spacing, and the critical monomer number  is ![Nc](
 
 ![Lc](https://render.githubusercontent.com/render/math?math=L_c%20%3D%20%202d%5Cleft(%5Cfrac%7B%20%7Bk_B%7D%20T%7D%7B%5Cmu_B%20m_%7Batom%7D%20B%7D%20%20%5Cright)%5E2)
 
-To generate the table below, we take _d_ = 0.35 nm, _B_ = 2 T, and _T_ = 298 K. 
+To generate the table below, we take _d_ = 0.35 nm, _B_ = 2 T, and _T_ = 298 K.
 
 | Ion                              |           _m_ | _m_<sub>_eff_</sub> |  _U_<sub>_m_</sub> |               _dG_ | _L_<sub>_c_</sub> | _N_<sub>_c_</sub> |
 | :------------------------------- | ------------: | ------------------: | -----------------: | -----------------: | ----------------: | ----------------: |
