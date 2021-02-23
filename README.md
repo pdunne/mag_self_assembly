@@ -1,4 +1,4 @@
-# mag_self_assembly
+# Magnetic Self Assembly
 
 Calculate the energy of a supramolecular assembly under applied magnetic fields.
 
