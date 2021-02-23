@@ -121,7 +121,7 @@ resulting in a matrix
 Other minimisation approaches are possible, such as by fixing the magnitude of
 the magnetic moments, and minimising the energy cost function through a free
 rotation of each moment. A first, simpler cost function, takes a macro-spin
-approach, assigning one polar ($\theta$) – azimuthal ($\phi$) angle pair, with all atomic
+approach, assigning one polar (<!-- $\theta$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctheta">) – azimuthal (<!-- $\phi$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cphi">) angle pair, with all atomic
 moments rotating coherently, which is minimised using the L-BFGS-B algorithm.
 The second allows the free rotation of each moment using basin hopping global
 optimisation, with L-BFGS-B as the local optimiser. However, both approaches
