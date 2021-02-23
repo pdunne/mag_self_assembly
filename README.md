@@ -38,7 +38,7 @@ The energy of an induced paramagnetic magnetic moment in an external field is
 
 ![energy](https://render.githubusercontent.com/render/math?math=%24U_%7Bm%7D%20%3D%20-%20%5Cfrac%7B1%7D%7B2%7D%20%5Cmathbf%7Bm%7D%5Ccdot%5Cmathbf%7BB%7D%24)
 
-At room temperature, local dipolar fields, and exchange interactions from neighbouring rare earth atoms in a DOTA-BTA assembly are negligible. The former is confirmed with detailed calculations elaborated below, and the latter from SQUID magnetometry, which showed an exchange interaction of -0.7 K (see [main text](https://doi.org/10.26434/chemrxiv.12762269.v1)). Furthermore, we can assume a linear Curie law dependence of these atomic moments for an applied magnetic field $\mathbf{B}$, giving an effective atomic moment, ![meff](https://render.githubusercontent.com/render/math?math=%24m_%7Beff%7D%24), in units of Bohr magneton, ![muB](https://render.githubusercontent.com/render/math?math=%5Cmu_B).
+At room temperature, local dipolar fields, and exchange interactions from neighbouring rare earth atoms in a DOTA-BTA assembly are negligible. The former is confirmed with detailed calculations elaborated below, and the latter from SQUID magnetometry, which showed an exchange interaction of -0.7 K (see [main text](https://doi.org/10.26434/chemrxiv.12762269.v1)). Furthermore, we can assume a linear Curie law dependence of these atomic moments for an applied magnetic field **B**, giving an effective atomic moment, ![meff](https://render.githubusercontent.com/render/math?math=%24m_%7Beff%7D%24), in units of Bohr magneton, ![muB](https://render.githubusercontent.com/render/math?math=%5Cmu_B).
 
 ![curie_law](https://render.githubusercontent.com/render/math?math=m_%7Beff%7D%20%3D%20%20%20%5Cfrac%7B%7B%5Cmu_B%7D%5E2%20m_%5Cmathrm%7Batom%7D%5E2%20B%7D%7B3%20%7Bk_B%7D%20T%7D)
 
@@ -46,7 +46,7 @@ where <!-- $m_{atom}$ --> <img style="transform: translateY(0.1em); background: 
 
 ![Umono](https://render.githubusercontent.com/render/math?math=U_%7Bmono%7D%20%3D%20%20%20-%20%5Cfrac%7B%7B%5Cmu_B%7D%5E2%20m_%7Batom%7D%5E2%20B%5E2%7D%7B%202%7Bk_B%7D%20T%7D)
 
-We define a critical length $L_c$, as the minimum length where the magnitude of the magnetic energy of an assembly is sufficient to equal or overcome thermal energy:
+We define a critical length _L_<sub>_c_</sub>, as the minimum length where the magnitude of the magnetic energy of an assembly is sufficient to equal or overcome thermal energy:
 
 ![critical_length](https://render.githubusercontent.com/render/math?math=L_c%20%3D%20%5Cfrac%7Bd%20%5C%2C%20%7Bk_B%7D%20T%7D%7B%5Cleft%7CU_%7Bmono%7D%5Cright%7C%7D)
 
@@ -99,7 +99,6 @@ knowing that in a single monomer those positions are ![xyz](https://render.githu
 that the stacking distance between monomers is _d_ = 0.35 nm, and that there is
 a helicity of 10˚ rotation per layer, which for the i<sup>th</sup> atom of the
 j<sup>th</sup> layer is:
-
 ![position](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20x'%20%5C%5C%0A%20%20%20%20y'%20%5C%5C%0A%20%20%20%20z'%0A%5Cend%7Bbmatrix%7D_%7Bi%2Cj%7D%0A%3D%0A%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20%5Ccos%20j%5Ctheta%20%20%26%20-%5Csin%20j%5Ctheta%20%26%201%20%20%5C%5C%0A%20%20%20%20%5Csin%20j%5Ctheta%20%20%26%20%5Ccos%20j%5Ctheta%20%26%201%20%20%5C%5C%0A%20%20%20%200%20%20%20%20%20%20%20%20%20%20%20%20%20%26%200%20%26%201%20%26%0A%5Cend%7Bbmatrix%7D%0A%5Cbegin%7Bbmatrix%7D%0A%20%20%20%20x%20%20%5C%5C%0A%20%20%20%20y%20%5C%5C%0A%20%20%20%20z%20%2B%20j%20d%0A%5Cend%7Bbmatrix%7D_%7Bi%2Cj%7D)
 
 3. Calculate each local dipole moment using either a Curie-Law or Brillouin
@@ -108,12 +107,9 @@ function (at _T_ = 298 K the difference is negligible) giving and array of
 
 4. At each atomic site, calculate the dipolar field due to all other moments in
 the assembly using
-
 ![dipole](https://render.githubusercontent.com/render/math?math=%5Cmathbf%7BB%7D(%5Cmathbf%7Br%7D)%20%3D%20%5Cfrac%7B%5Cmu_0%7D%7B4%5Cpi%7D%20%5Cleft%5B%5Cfrac%7B3%20%5Cmathbf%7Bm%7D%0A%20%20%20%20(%5Cmathbf%7Bm%7D%20%5Ccdot%20%5Cmathbf%7B%5Chat%7Br%7D%7D%20)%20%7D%20%7Br%5E5%7D%20-%20%5Cfrac%7B%5Cmathbf%7Bm%7D%7D%20%7Br%5E3%7D%5Cright%5D)
-
 which is the magnetic field at a point in space due to a magnetic dipole,
 resulting in a matrix
-
 ![field](https://render.githubusercontent.com/render/math?math=%5Cmathbf%7BB_%7Bdip%7D%7D%20%3D%20B_%7Bdip%2C%20x%7D%20%5Cmathbf%7B%5Chat%7Bx%7D%7D%20%2B%20B_%7Bdip%2C%20y%7D%20%5Cmathbf%7B%5Chat%7By%7D%7D%20%2B%20B_%7Bdip%2C%20y%7D%20%5Cmathbf%7B%5Chat%7Bz%7D%7D)
 
 5. At each atomic site sum the external and dipole fields ![total_field](https://render.githubusercontent.com/render/math?math=B_%7Btotal%7D%20%3D%20%20B_%7Bext%7D%20%2B%20B_%7Bdip%7D)
