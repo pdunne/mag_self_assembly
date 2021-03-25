@@ -1,4 +1,4 @@
-"""Self-consitent Calculations
+"""Self-Consistent Calculations
 
 Contains functions needed to perform magnetic self-consistent calculations
 """
